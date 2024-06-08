@@ -331,7 +331,7 @@ int main(){
              ds+=tdhz;
          }
          else if(prev2!=-1){
-            if((inst[k][1]==inst[prev2][1])){
+            if((inst[k][1]==inst[prev2][1])||(inst[k+1][0]==inst[prev2][1])){
             fd=1;
             hz=k;
          if(marked[prev2]==3){
@@ -343,7 +343,7 @@ int main(){
          }
          }
          else if((prev2!=-1)){
-          if((inst[k][1]==inst[prev2][1])){
+          if((inst[k][1]==inst[prev2][1])||(inst[k+1][0]==inst[prev2][1])){
             fd=1;
             hz=k;
          if(marked[prev2]==3){
