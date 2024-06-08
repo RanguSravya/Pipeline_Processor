@@ -318,7 +318,7 @@ int main(){
         }
          else if((inst[k][0]=='c')){
          if(prev1!=-1){
-           if((inst[k][1]==inst[prev1][1])){
+           if((inst[k][1]==inst[prev1][1])||(inst[k+1][0]==inst[prev1][1])){
             fd=1;
             hz=k;
          if(marked[prev1]==3){
